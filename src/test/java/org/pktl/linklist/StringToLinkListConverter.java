@@ -1,0 +1,14 @@
+package org.pktl.linklist;
+
+import org.junit.jupiter.params.converter.ArgumentConversionException;
+import org.junit.jupiter.params.converter.SimpleArgumentConverter;
+import org.pktl.common.ListNode;
+import org.pktl.util.LinkListUtil;
+
+public class StringToLinkListConverter extends SimpleArgumentConverter {
+    @Override
+    protected Object convert(Object o, Class<?> aClass) throws ArgumentConversionException {
+        final ListNode listNode = LinkListUtil.stringToLinkList((String) o);
+        return listNode;
+    }
+}
