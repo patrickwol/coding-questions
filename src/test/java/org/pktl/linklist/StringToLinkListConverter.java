@@ -8,7 +8,6 @@ import org.pktl.util.LinkListUtil;
 public class StringToLinkListConverter extends SimpleArgumentConverter {
     @Override
     protected Object convert(Object o, Class<?> aClass) throws ArgumentConversionException {
-        final ListNode listNode = LinkListUtil.stringToLinkList((String) o);
-        return listNode;
+        return LinkListUtil.stringToLinkList((String) o);
     }
 }
