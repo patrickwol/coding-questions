@@ -1,6 +1,5 @@
 package org.pktl.linklist.reversebetween;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -8,7 +7,7 @@ import org.pktl.common.ListNode;
 import org.pktl.linklist.StringToLinkListConverter;
 import org.pktl.util.LinkListUtil;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SolutionTest {
 
