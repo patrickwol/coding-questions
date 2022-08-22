@@ -3,7 +3,6 @@ package org.pktl.util;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.text.CharPool;
 import cn.hutool.core.util.StrUtil;
-import org.pktl.common.ListNode;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.pktl.common;
+package org.pktl.util;
 
 public class ListNode {
     public int val;

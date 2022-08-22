@@ -1,7 +1,6 @@
 package org.pktl.util;
 
 import org.junit.jupiter.api.Test;
-import org.pktl.common.ListNode;
 
 class LinkListUtilTest {
 

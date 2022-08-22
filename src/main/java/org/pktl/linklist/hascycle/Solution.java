@@ -1,13 +1,13 @@
 package org.pktl.linklist.hascycle;
 
-import org.pktl.common.ListNode;
+import org.pktl.util.ListNode;
 
+/**
+ * 牛客 BM6 判断链表中是否有环
+ */
 public class Solution {
 
     public boolean hasCycle(ListNode head) {
-/*        if (head == null) {
-            return false;
-        }*/
         ListNode l1 = head;
         ListNode l2 = head;
         while (l2 != null && l2.next != null) {

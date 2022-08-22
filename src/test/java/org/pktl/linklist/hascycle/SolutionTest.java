@@ -1,7 +1,7 @@
 package org.pktl.linklist.hascycle;
 
 import org.junit.jupiter.api.Test;
-import org.pktl.common.ListNode;
+import org.pktl.util.ListNode;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

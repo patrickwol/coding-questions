@@ -1,11 +1,15 @@
 package org.pktl.linklist.reverse;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import org.pktl.common.ListNode;
+import org.pktl.linklist.LinkListConverter;
 import org.pktl.util.LinkListUtil;
+import org.pktl.util.ListNode;
 
+@Slf4j
 class SolutionTest {
 
     @Test
@@ -16,13 +20,12 @@ class SolutionTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/linklist-reverse.csv")
-    void reverseListCsv(String s, String res) {
-        final ListNode listNode = LinkListUtil.stringToLinkList(s);
-        System.out.printf("input :%s\n", listNode);
-        final ListNode expectListNode = LinkListUtil.stringToLinkList(res);
-        System.out.printf("expect:%s\n", expectListNode);
-        final ListNode resListNode = new Solution().ReverseList(listNode);
-        System.out.printf("result:%s\n", resListNode);
+    void reverseListCsv(@ConvertWith(LinkListConverter.class) ListNode input,
+                        @ConvertWith(LinkListConverter.class) ListNode expect) {
+        log.info("input:{}", LinkListUtil.linkListToString(input));
+        log.info("expect:{}", LinkListUtil.linkListToString(expect));
+        final ListNode resListNode = new Solution().ReverseList(input);
+        log.info("result:{}", LinkListUtil.linkListToString(resListNode));
     }
 
 }

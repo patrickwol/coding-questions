@@ -1,6 +1,6 @@
 package org.pktl.linklist.reversebetween;
 
-import org.pktl.common.ListNode;
+import org.pktl.util.ListNode;
 
 /**
  * 牛客
