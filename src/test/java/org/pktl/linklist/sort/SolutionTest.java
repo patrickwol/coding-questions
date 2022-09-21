@@ -3,7 +3,7 @@ package org.pktl.linklist.sort;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.pktl.linklist.LinkListConverter;
+import org.pktl.converter.LinkListConverter;
 import org.pktl.util.LinkListUtil;
 import org.pktl.util.ListNode;
 

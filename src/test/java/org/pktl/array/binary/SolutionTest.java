@@ -3,7 +3,7 @@ package org.pktl.array.binary;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.pktl.linklist.IntArrayConverter;
+import org.pktl.converter.IntArrayConverter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
